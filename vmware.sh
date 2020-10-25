@@ -1,4 +1,5 @@
-sudo apt install -y curl git libaio1
+sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt full-upgrade -y
+sudo apt install -y curl git libaio1 build-essential linux-headers-`uname -r` linux-image-`uname -r` vlan
 sudo curl -L https://www.vmware.com/go/getworkstation-linux > Downloads/vmware.bin
 sudo chmod +x Downloads/vmware.bin
 sudo ./vmware.bin
